@@ -65,3 +65,40 @@ remove_contact("Alice")
 display_contacts()
 
 print(phonebook)
+
+
+student_grades = {}
+
+#Adding students and grades 
+def add_student(name, grade):
+    student_grades[name] = grade
+    print(f"Student '{name}' was added with grade {grade}")
+
+#Removing student from dictionary
+def remove_student(name):
+    if name in student_grades:
+        del student_grades[name]
+        print(f"Contact '{name}' was removed")
+    else:
+        print(f"Contact '{name}' not found")
+
+#Displaying students and grades 
+def display_students():
+    print("Students and Grades:")
+    for name, grade in student_grades.items():
+        print(f"{name}, {grade}")
+##updating Students and grades 
+def update_grade(name, grade):
+    student_found = False
+
+    for student in student_grades:
+        if student ['name'] == name:
+            student ['grade'] = grade
+            student_found = True
+            print(f"Updated {name}'s grade to {grade}.")
+            break
+        if not student_found:
+            print(f"Student {name} was not found.")
+
+#testing function 
+update_grade("Alice", 99)
