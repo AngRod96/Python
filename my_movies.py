@@ -100,5 +100,19 @@ def update_grade(name, grade):
         if not student_found:
             print(f"Student {name} was not found.")
 
-#testing function 
+#testing function for updating students and their grades
 update_grade("Alice", 99)
+
+
+#Adding Students 
+student_grades("Taylor", 99)
+student_grades("Patrick", 60)
+
+#display students and grades
+display_students()
+
+#remove student
+remove_student("Taylor")
+
+#display Sutddents and grades again
+display_students()
