@@ -116,3 +116,20 @@ remove_student("Taylor")
 
 #display Sutddents and grades again
 display_students()
+
+students = [
+    {"name": "Alice", "grade": 85},
+    {"name": "Bob", "grade": 78},
+    {"name": "Charlie", "grade": 92}
+]
+
+def average_grade():
+    total_grades = 0
+    for student in students:
+        total_grades += student['grade']
+
+        average = total_grades / len(students)
+
+    print(f"The average grade is: {average}")
+    
+average_grade()
