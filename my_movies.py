@@ -200,3 +200,6 @@ def display_results(common, unique1, unique2):
 
 # Displaying the comparison results
 display_results(common_words, unique_to_paragraph1, unique_to_paragraph2)
+
+#Email List Management 
+def add_email(email, set_name)
