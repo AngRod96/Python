@@ -178,11 +178,11 @@ print("Common words:", common_words)
 unique_to_paragraph1 = find_unique_words(unique_words1, unique_words2)
 print("Words unique to paragraph 1:", unique_to_paragraph1)
 
-# Finding words unique to the second paragraph
+#FINDING WORDS UNIQUE TO THE SECOND PARAGRAPH 
 unique_to_paragraph2 = find_unique_words(unique_words2, unique_words1)
 print("Words unique to paragraph 2:", unique_to_paragraph2)
 
-#STEP 3
+#STEP 3 
 def display_results(common, unique1, unique2):
     print("Comparison Results:")
     print("\nCommon Words:")
