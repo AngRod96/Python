@@ -197,5 +197,6 @@ def display_results(common, unique1, unique2):
     for word in unique2:
         print(word)
 
+
 # Displaying the comparison results
 display_results(common_words, unique_to_paragraph1, unique_to_paragraph2)
