@@ -202,4 +202,65 @@ def display_results(common, unique1, unique2):
 display_results(common_words, unique_to_paragraph1, unique_to_paragraph2)
 
 #Email List Management 
-def add_email(email, set_name)
+subscribers = set()
+unsubscribers = set()
+
+def add_email(email, set_name):
+    print(f"Email '{email}' added to {'subscribers' if set_name == subscribers else 'unsubscribers'},")
+
+
+# Initialize empty sets
+subscribers = set()
+unsubscribers = set()
+
+# Function to add an email
+def add_email(email, set_name):
+
+    print(f"Email '{email}' added to {'subscribers' if set_name == subscribers else 'unsubscribers'}.")
+
+# Function to remove an email
+def remove_email(email, set_name):
+    pass
+
+# Function to display emails
+def display_emails(set_name):
+    pass
+
+# Function to find active subscribers. Return the set.
+def find_active_subscribers():
+    pass
+
+# Adding emails to subscribers (notice that some people subscribe more than once)
+add_email("user1@example.com", subscribers)
+add_email("user3@example.com", subscribers)
+add_email("user4@example.com", subscribers)
+add_email("user11@example.com", subscribers)
+add_email("user5@example.com", subscribers)
+add_email("user6@example.com", subscribers)
+add_email("user2@example.com", subscribers)
+add_email("user5@example.com", subscribers)
+add_email("user2@example.com", subscribers)
+add_email("user7@example.com", subscribers)
+add_email("user8@example.com", subscribers)
+add_email("user9@example.com", subscribers)
+add_email("user2@example.com", subscribers)
+add_email("user11@example.com", subscribers)
+add_email("user7@example.com", subscribers)
+add_email("user10@example.com", subscribers)
+add_email("user12@example.com", subscribers)
+
+# Adding emails to unsubscribers
+add_email("user6@example.com", unsubscribers)
+add_email("user8@example.com", unsubscribers)
+add_email("user1@example.com", unsubscribers)
+add_email("user10@example.com", unsubscribers)
+
+# Displaying subscribers and unsubscribers
+print("All Subscribers:")
+
+
+print("All Unsubscribers:")
+
+
+# Finding active subscribers
+print("Active Subscribers:")
